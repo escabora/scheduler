@@ -3,9 +3,9 @@ package core
 import (
 	"time"
 
-	"github.com/escabora/scheduler/internal/models"
 	"github.com/escabora/scheduler/internal/predictions"
 	"github.com/escabora/scheduler/internal/utils"
+	"github.com/escabora/scheduler/models"
 )
 
 type Scheduler struct {

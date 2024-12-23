@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/escabora/scheduler/internal/models"
+	"github.com/escabora/scheduler/models"
 )
 
 func RunPredictions(predicted map[string]models.PredictedTask) {
