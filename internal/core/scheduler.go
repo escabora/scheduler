@@ -33,7 +33,7 @@ func (s *Scheduler) Start() {
 			case <-s.quit:
 				return
 			default:
-				s.runTasks()
+				s.RunTasks()
 				predictions.RunPredictions(s.predicted)
 				time.Sleep(time.Second)
 			}
@@ -45,7 +45,7 @@ func (s *Scheduler) Stop() {
 	s.quit <- true
 }
 
-func (s *Scheduler) runTasks() {
+func (s *Scheduler) RunTasks() {
 	now := time.Now()
 
 	for _, task := range s.tasks {
