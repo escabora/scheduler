@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/escabora/scheduler/internal/core"
 	"github.com/escabora/scheduler/internal/predictions"
+	"github.com/escabora/scheduler/internal/schedule"
 	"github.com/escabora/scheduler/internal/utils"
 	"github.com/escabora/scheduler/models"
 )
 
 func TestSchedulerAddTask(t *testing.T) {
-	s := core.NewScheduler()
+	s := schedule.NewScheduler()
 
 	called := false
 	s.AddTask("* * * * *", func() {

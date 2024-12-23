@@ -16,11 +16,11 @@ go get github.com/escabora/scheduler
 ### Usage
 ```go
 import (
-	"github.com/escabora/scheduler/internal/core"
+	"github.com/escabora/scheduler/internal/schedule"
 )
 
 func main() {
-	s := core.NewScheduler()
+	s := schedule.NewScheduler()
 
 	s.AddTask("* * * * *", func() {
 		fmt.Println("Running static task")
